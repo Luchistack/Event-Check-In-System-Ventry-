@@ -1,4 +1,4 @@
-package org.EventCheckIn.securityService.securityStaffServiceConfig;
+package main.java.org.EventCheckIn.securityService.securityStaffServiceConfig;
 
 import org.springframework.context.annotation.Configuration;
 

@@ -1,4 +1,4 @@
-package org.EventCheckIn.securityService.controllers;
+package main.java.org.EventCheckIn.securityService.controllers;
 import jakarta.validation.Valid;
 import org.EventCheckIn.securityService.dtos.operations.request.ScanQRRequest;
 import org.EventCheckIn.securityService.dtos.auth.request.SecurityLoginRequest;
@@ -7,10 +7,7 @@ import org.EventCheckIn.securityService.dtos.operations.request.VerifyGuestReque
 import org.EventCheckIn.securityService.services.SecurityProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-
 import org.springframework.web.bind.annotation.*;
-
-org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/v1/security")
@@ -35,11 +32,11 @@ public class SecurityController {
 
     @GetMapping("scan-code")
     public ResponseEntity<?> scanQrCode(@Valid @RequestBody ScanQRRequest request){
-        return ResponseEntity.ok(SecurityProfileService.scanQrCode(request));
+        return ResponseEntity.ok(securityService.scanQrCode(request));
     }
 
     @GetMapping("verify")
     public ResponseEntity<?> verifyGuest(@Valid @RequestBody VerifyGuestRequest request){
-        return ResponseEntity.ok(SecurityProfileService.verifyGuest(request));
+        return ResponseEntity.ok(securityService.verifyGuest(request));
     }
 }

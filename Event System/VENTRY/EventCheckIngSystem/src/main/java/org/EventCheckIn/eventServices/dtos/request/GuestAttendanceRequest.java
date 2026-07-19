@@ -7,6 +7,6 @@ import lombok.Setter;
 @Setter
 public class GuestAttendanceRequest {
 
-    private
+    private String guestId;
 
 }

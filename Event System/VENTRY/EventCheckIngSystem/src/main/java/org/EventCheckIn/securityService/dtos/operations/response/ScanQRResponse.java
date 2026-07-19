@@ -1,7 +1,7 @@
 package org.EventCheckIn.securityService.dtos.operations.response;
-import main.java.org.EventCheckIn.guestServices.datas.models.Guest;
 
 import lombok.Data;
+import org.EventCheckIn.guestServices.datas.models.Guest;
 import org.EventCheckIn.securityService.datas.enums.ScanStatus;
 
 @Data

@@ -1,4 +1,4 @@
-package main.java.org.EventCheckIn.organiserService.data.models;
+package org.EventCheckIn.organiserService.data.models;
 
 public class SecurityChecksGuestIn {
 }

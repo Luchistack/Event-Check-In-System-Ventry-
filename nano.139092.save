@@ -1,0 +1,54 @@
+/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests compile
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && echo $?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests compile && echo 'COMPILE_OK' || echo 'COMPILE_FAILED'
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests compile && echo COMPILE_OK || echo COMPILE_FAILED
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests compile 2>&1 | cat && echo EXIT:$?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -Dtest=GuestServiceIntegrationTest test 2>&1 | cat && echo EXIT:$?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && echo ready
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && pwd && ls -1 docker-compose.yml src/main/resources/application.properties
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests compile && echo COMPILE_OK || echo COMPILE_FAILED
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && rm -f src/main/java/org/EventCheckIn/db/data.sql
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ls -l src/main/java/org/EventCheckIn/db && rm -f src/main/java/org/EventCheckIn/db/data.sql && echo 'done' && ls -l src/main/java/org/EventCheckIn/db || true
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && pwd && rm -vf src/main/java/org/EventCheckIn/db/data.sql && echo EXIT:$?
+ set -x; cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && pwd && ls -ld src/main/java/org/EventCheckIn/db/data.sql && rm -vf src/main/java/org/EventCheckIn/db/data.sql && ls -ld src/main/java/org/EventCheckIn/db/data.sql; echo EXIT:$?
+ echo hi
+ python3 - <<'PY'
+import os
+path='/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem/src/main/java/org/EventCheckIn/db/data.sql'
+print('exists', os.path.exists(path))
+if os.path.exists(path):
+    os.remove(path)
+    print('removed')
+print('exists after', os.path.exists(path))
+PY
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && git status --short && git add -A && git commit -m 'Cleanup event/security services and remove misplaced data.sql' && git push
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && git status --short && echo '---' && git log -1 --oneline
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && pwd && git branch --show-current && git status --short && git log -1 --oneline
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && echo START && git status --short && echo MIDDLE && git log -1 --oneline && echo END
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && pwd && echo OK
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests compile
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests compile; echo EXIT:$?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && (./mvnw spring-boot:run > /tmp/eventcheckin.log 2>&1 &) && echo STARTED && echo $!
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && nohup ./mvnw spring-boot:run > ./target/app.log 2>&1 & echo $!
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -DskipTests compile
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -DskipTests compile; echo EXIT:$?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && java -version && echo '---' && ./mvnw -version
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -DskipTests compile > target/build.log 2>&1; echo $? > target/build.exit
+ cd /home/semicolon/Documents/CLIENT\ JOBS/Priority,\ to\ be\ completed\ /Event-Check-In-System-Ventry-/Event\ System/VENTRY/EventCheckIngSystem && ls | head
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ls -la && echo '---' && ./mvnw -q -DskipTests package
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -DskipTests package; echo EXIT:$?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && docker --version && echo '---' && docker-compose --version
+ python3 - <<'PY'
+from pathlib import Path
+Path('/tmp/terminal_test.txt').write_text('hello')
+print('wrote')
+PY
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -q -DskipTests package
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && ./mvnw -DskipTests package; echo EXIT:$?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && docker-compose version
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && docker-compose config > /tmp/compose-config.txt 2>&1 && echo done && wc -l /tmp/compose-config.txt
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && docker-compose up --build
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && docker-compose up --build; echo EXIT:$?
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-/Event System/VENTRY/EventCheckIngSystem' && echo 'docker:' && command -v docker || true && echo 'docker-compose:' && command -v docker-compose || true && echo 'docker compose plugin:' && docker compose version || true
+ cd '/home/semicolon/Documents/CLIENT JOBS/Priority, to be completed /Event-Check-In-System-Ventry-' && chmod +x start-docker.sh && ./start-docker.sh
+

@@ -1,7 +1,5 @@
 package org.EventCheckIn.securityService.datas.repositories;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import org.EventCheckIn.securityService.datas.models.Security;
 import org.springframework.data.jpa.repository.JpaRepository;
 

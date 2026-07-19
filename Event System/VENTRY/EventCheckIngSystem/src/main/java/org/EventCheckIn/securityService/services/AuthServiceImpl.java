@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 
 
 @Service
-public class AuthServiceImpl implements AuthService {
+public class AuthServiceImpl implements org.EventCheckIn.securityService.services.AuthService {
 
     @Autowired
     private SecurityRepository securityRepository;

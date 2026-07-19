@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: event_db
+      POSTGRES_USER: Luchistack
+      POSTGRES_PASSWORD: "@Ikorodu2025!"
+    ports:
+      - "5432:5432"
+
+  app:
+    build:
+      context: "./Event System/VENTRY/EventCheckIngSystem"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/event_db
+      SPRING_DATASOURCE_USERNAME: Luchistack
+      SPRING_DATASOURCE_PASSWORD: "@Ikorodu2025!"
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "8080:8080"

@@ -1,10 +1,9 @@
-package org.EventCheckIn.core.security;
+package org.EventCheckIn.core.appSecurity;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -18,9 +17,12 @@ public class WebSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
 
-                .csrf(AbstractHttpConfigurer::disable)
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").authenticated()
+                        .requestMatchers("/api/guests").permitAll()
+                        .requestMatchers("/api/guests/invitations/**").permitAll()
+                        .requestMatchers("/api/guests/scan-qr").permitAll()
                         .requestMatchers("/api/guests/**").hasRole("GUEST")
                         .requestMatchers("/api/organisers/**").hasRole("ORGANIZER")
                         .requestMatchers("/api/security-staff/**").hasRole("SECURITY")

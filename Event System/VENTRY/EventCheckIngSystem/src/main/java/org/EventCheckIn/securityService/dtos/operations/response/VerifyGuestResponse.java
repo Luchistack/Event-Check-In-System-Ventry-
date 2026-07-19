@@ -1,4 +1,4 @@
-package org.EventCheckIn.securityService.dtos.operations.response;
+package main.java.org.EventCheckIn.securityService.dtos.operations.response;
 
 import lombok.Data;
 

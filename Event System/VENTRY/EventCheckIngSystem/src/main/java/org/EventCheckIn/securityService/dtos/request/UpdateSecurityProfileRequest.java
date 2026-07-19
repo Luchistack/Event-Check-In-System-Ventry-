@@ -1,4 +1,4 @@
-package org.EventCheckIn.securityService.dtos.request;
+package main.java.org.EventCheckIn.securityService.dtos.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
